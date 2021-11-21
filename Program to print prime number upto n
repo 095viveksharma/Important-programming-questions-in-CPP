@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+bool Isprime(int n)
+{
+    if(n<=1)
+        return false;
+    for(int i=2; i<n; i++)
+    {
+        if(n%i== 0)
+            return false;
+    }
+    return true;
+}
+
+
+int printPrime(int n)
+{
+    for(int i = 2; i <= n; i++ )
+    {
+        if(Isprime(i))
+            cout<<i<<" ";
+    }
+}
+
+int main()
+{
+    int n;
+    cout<<"Enter one number: ";
+    cin>>n;
+    printPrime(n);
+    return 0;
+}
