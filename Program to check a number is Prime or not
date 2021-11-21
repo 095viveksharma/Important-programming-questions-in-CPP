@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+bool prime(int n)
+{
+    int i;
+    if(n<=1)
+        return false;
+    for(i=2;i<n;i++)
+    {
+        if(n%i==0)
+            return false;
+    }
+    return true;
+}
+
+
+int main()
+{
+    int number;
+    cout<<"Enter number ";
+    cin>>number;
+    prime(number)? cout<<number<<" is a Prime number" : cout<<"Not a prime number.";
+    return 0;
+}
