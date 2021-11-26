@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    char a[50];
+    cout<<"Enter one string: ";
+    cin>>a;
+    cout<<"Reverse string is: ";
+    for(int i= strlen(a)-1; i>=0; i--)
+        cout<<a[i];
+    return 0;
+}
